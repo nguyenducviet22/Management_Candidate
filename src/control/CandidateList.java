@@ -303,8 +303,6 @@ public class CandidateList {
         for (int i = 0; i < expList.size(); i++) {
             if (expList.get(i).getCandidateID().equalsIgnoreCase(searchID)) {
                 System.out.println("Enter candidate info: ");
-                System.out.print("Enter id: ");
-                String id = v.insertId(list);
                 System.out.print("Enter first name: ");
                 String firstName = v.insertFirstName();
                 System.out.print("Enter last name: ");
@@ -321,7 +319,7 @@ public class CandidateList {
                 int exp = v.insertExp();
                 System.out.print("Enter pro-skill: ");
                 String skill = v.insertProSkill();
-                Experienced newExp = new Experienced(id, firstName,
+                Experienced newExp = new Experienced(searchID, firstName,
                         lastName, birthDate, address, phone, email, exp, skill);
                 expList.set(i, newExp);
                 rw.writeToExpFile(expList);
@@ -336,8 +334,6 @@ public class CandidateList {
         for (int i = 0; i < expList.size(); i++) {
             if (expList.get(i).getCandidateID().equalsIgnoreCase(searchID)) {
                 System.out.println("Enter candidate info: ");
-                System.out.print("Enter id: ");
-                String id = v.insertId(list);
                 System.out.print("Enter first name: ");
                 String firstName = v.insertFirstName();
                 System.out.print("Enter last name: ");
@@ -356,7 +352,7 @@ public class CandidateList {
                 String graRank = v.insertGraRank();
                 System.out.print("Enter education: ");
                 String edu = v.insertEdu();
-                Fresher newFresher = new Fresher(id, firstName,
+                Fresher newFresher = new Fresher(searchID, firstName,
                         lastName, birthDate, address, phone, email, graYear, graRank, edu);
                 fresherList.set(i, newFresher);
                 rw.writeToFresherFile(fresherList);
@@ -371,8 +367,6 @@ public class CandidateList {
         for (int i = 0; i < internList.size(); i++) {
             if (internList.get(i).getCandidateID().equalsIgnoreCase(searchID)) {
                 System.out.println("Enter candidate info: ");
-                System.out.print("Enter id: ");
-                String id = v.insertId(list);
                 System.out.print("Enter first name: ");
                 String firstName = v.insertFirstName();
                 System.out.print("Enter last name: ");
@@ -391,7 +385,7 @@ public class CandidateList {
                 String semeter = v.insertSemester();
                 System.out.print("Enter university: ");
                 String uniName = v.uniName();
-                Intern newIntern = new Intern(id, firstName, lastName, birthDate,
+                Intern newIntern = new Intern(searchID, firstName, lastName, birthDate,
                         address, phone, email, major, semeter, uniName);
                 internList.set(i, newIntern);
                 rw.writeToInternFile(internList);

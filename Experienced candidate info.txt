@@ -1,1 +1,1 @@
-Experienced     | SE1          | VIET       | NGUYEN     | 2004 | tp hcm          | 0147896325 | nv@gmail.com    |          1 | IT         |
+Experienced     | se1          | VIET       | NGUYEN     | 2000 | bd              | 0365214987 | vn@gmail.com    |          5 | BE         |
