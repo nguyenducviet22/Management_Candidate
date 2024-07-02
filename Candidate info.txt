@@ -1,4 +1,0 @@
-1, Viet, Nguyen, 2004, TP HCM, 123, nv@gmail.com
-2, Son, Nguyen, 2004, Binh Duong, 123, ns@gmail.com
-3, Dong, Le, 2004, tp HCM, 123, ld@gmail.com
-4, Tri, Duong, 2005, tp hcm, 123, dt@gmail.com

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package managementcandidate;
+package model;
 
 /**
  *
@@ -11,18 +11,18 @@ package managementcandidate;
  */
 public class Candidate {
 
-    private String candidateID;
-    private String firstName;
-    private String lastName;
-    private int birthDate;
-    private String address;
-    private int phone;
-    private String email;
+    protected String candidateID;
+    protected String firstName;
+    protected String lastName;
+    protected int birthDate;
+    protected String address;
+    protected String phone;
+    protected String email;
 
     public Candidate() {
     }
 
-    public Candidate(String candidateID, String firstName, String lastName, int birthDate, String address, int phone, String email) {
+    public Candidate(String candidateID, String firstName, String lastName, int birthDate, String address, String phone, String email) {
         this.candidateID = candidateID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -72,11 +72,11 @@ public class Candidate {
         this.address = address;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -90,6 +90,8 @@ public class Candidate {
 
     @Override
     public String toString() {
-        return String.format("%s, %s, %s, %d, %s, %d, %s", candidateID, firstName, lastName, birthDate, address, phone, email);
+        return String.format("%-8s, %-8s, %-8s, %d, %-10s, %-10s, %-20s", candidateID, firstName, lastName, birthDate, address, phone, email);
     }
+
+    
 }

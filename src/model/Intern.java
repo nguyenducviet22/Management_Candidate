@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package managementcandidate;
+package model;
+
+import model.Candidate;
 
 /**
  *
@@ -17,11 +19,14 @@ public class Intern extends Candidate{
     public Intern() {
     }
 
-    public Intern(String major, String semester, String uniName) {
+    public Intern(String candidateID, String firstName, String lastName, int birthDate, String address, String phone, String email, String major, String semester, String uniName) {
+        super(candidateID, firstName, lastName, birthDate, address, phone, email);
         this.major = major;
         this.semester = semester;
         this.uniName = uniName;
     }
+
+    
 
     public String getMajor() {
         return major;
@@ -49,7 +54,8 @@ public class Intern extends Candidate{
 
     @Override
     public String toString() {
-        return "Intern{" + "major=" + major + ", semester=" + semester + ", uniName=" + uniName + '}';
+        return String.format("%-15s | %-12s | %-10s | %-10s | %4d | %-15s | %-10s | %-15s | %-10s | %-8s | %-10s |", 
+                "Intern", candidateID, firstName, lastName, birthDate, address, phone, email, major, semester, uniName);
     }
     
     
